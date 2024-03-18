@@ -1,9 +1,11 @@
+from abc import ABC, abstractmethod
 from math import sqrt
 
 
-class SquareGenerator:
+class SquareGenerator(ABC):
     class MyException(Exception):
         pass
 
-    def get_squares(self, start: int, end: int) -> list[float]:
-        return [i**2 for i in range(start, end)]
+    @abstractmethod
+    def get_squares(self, start: int, end: int):
+        pass
