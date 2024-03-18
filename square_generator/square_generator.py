@@ -8,4 +8,4 @@ class SquareGenerator:
     def get_squares(self, start: int, end: int) -> list[float]:
         if start > end:
             raise self.MyException()
-        return [sqrt(i) for i in range(start, end)]
+        return [i**2 for i in range(start, end)]
