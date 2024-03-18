@@ -1,6 +1,9 @@
+from math import sqrt
+
+
 class SquareGenerator:
-    def get_squares(self, start: int, end: int) -> list[int]:
-        return [i ** 2 for i in range(start, end)]
+    def get_squares(self, start: int, end: int) -> list[float]:
+        return [sqrt(i) for i in range(start, end)]
 
 
 gen = SquareGenerator()
